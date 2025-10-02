@@ -323,3 +323,80 @@ false {
   color: black;
   border-color: black;
 }
+
+.doodle-hud {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(6, 15, 34, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 12px 20px;
+    display: flex;
+    gap: 12px;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    backdrop-filter: blur(6px);
+    z-index: 20;
+}
+
+.doodle-hud__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+}
+
+.doodle-hud__label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    opacity: 0.7;
+}
+
+.doodle-hud__value {
+    font-size: 26px;
+    font-weight: 700;
+    color: #f5fbff;
+}
+
+.doodle-gameover {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(2, 6, 14, 0.65);
+    backdrop-filter: blur(8px);
+    z-index: 30;
+    text-align: center;
+    padding: 24px;
+}
+
+.doodle-gameover__panel {
+    background: rgba(5, 12, 26, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 32px 40px;
+    max-width: 360px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.doodle-gameover__panel h1 {
+    margin: 0 0 12px 0;
+    font-size: 32px;
+    letter-spacing: 0.08em;
+}
+
+.doodle-gameover__score {
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+.doodle-gameover__hint {
+    margin-top: 18px;
+    font-size: 16px;
+    opacity: 0.8;
+}
